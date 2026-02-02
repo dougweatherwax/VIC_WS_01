@@ -1,6 +1,6 @@
 # VIC Website
 
-A modern, responsive website for Variable Insurance Company (VIC), designed for AWS deployment with future extensibility for user authentication and file upload capabilities.
+A modern, responsive website for Valiance Insurance Company (VIC), designed for AWS deployment with future extensibility for user authentication and file upload capabilities.
 
 ## Features
 
@@ -323,7 +323,7 @@ For AWS issues, visit https://docs.aws.amazon.com
 
 ## License
 
-© 2026 Variable Insurance Company (VIC). All rights reserved.
+© 2026 Valiance Insurance Company (VIC). All rights reserved.
 
 ## Version History
 
