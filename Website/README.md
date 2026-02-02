@@ -1,6 +1,6 @@
 # VIC Website
 
-A modern, responsive website for Valiance Insurance Company (VIC), designed for AWS deployment with future extensibility for user authentication and file upload capabilities.
+A modern, responsive website for Valiance Insurance Company (VIC), a life settlements company helping individuals sell their in-force life insurance policies for cash. Designed for AWS deployment with future extensibility for user authentication and file upload capabilities.
 
 ## Features
 
