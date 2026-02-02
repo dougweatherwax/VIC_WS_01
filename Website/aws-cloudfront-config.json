@@ -1,0 +1,47 @@
+{
+  "Comment": "CloudFront distribution for VIC Website",
+  "CallerReference": "vic-website-2026",
+  "Aliases": {
+    "Quantity": 0
+  },
+  "DefaultRootObject": "index.html",
+  "Origins": {
+    "Quantity": 1,
+    "Items": [
+      {
+        "Id": "S3-VIC-Website",
+        "DomainName": "YOUR-BUCKET-NAME.s3.amazonaws.com",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        }
+      }
+    ]
+  },
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "S3-VIC-Website",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "AllowedMethods": {
+      "Quantity": 2,
+      "Items": ["GET", "HEAD"],
+      "CachedMethods": {
+        "Quantity": 2,
+        "Items": ["GET", "HEAD"]
+      }
+    },
+    "Compress": true,
+    "ForwardedValues": {
+      "QueryString": false,
+      "Cookies": {
+        "Forward": "none"
+      }
+    },
+    "MinTTL": 0,
+    "DefaultTTL": 86400,
+    "MaxTTL": 31536000
+  },
+  "Comment": "VIC Static Website Distribution",
+  "Enabled": true,
+  "HttpVersion": "http2",
+  "IsIPV6Enabled": true,
+  "PriceClass": "PriceClass_100"
+}

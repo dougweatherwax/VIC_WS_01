@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact VIC - Variable Insurance Company">
+    <title>Contact Us - VIC</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">VIC</a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="text-center mb-2">Contact Us</h1>
+        
+        <!-- Alert Messages -->
+        <div id="alertContainer"></div>
+
+        <!-- Contact Form -->
+        <div class="form-container">
+            <h2 class="mb-2">Send Us a Message</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Select a Subject --</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="quote">Request a Quote</option>
+                        <option value="support">Customer Support</option>
+                        <option value="claims">Claims</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <!-- File Upload Section (Prepared for future backend integration) -->
+                <div class="form-group">
+                    <label for="fileUpload">Attach Files (Optional)</label>
+                    <div class="file-upload" id="fileUploadArea">
+                        <input type="file" id="fileUpload" name="files" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                        <p>Click to upload or drag and drop</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">PDF, DOC, DOCX, JPG, PNG (Max 5MB per file)</p>
+                    </div>
+                    <div id="fileList" class="mt-1"></div>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+
+            <!-- Loading Spinner -->
+            <div class="spinner" id="loadingSpinner"></div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="card-grid mt-3">
+            <div class="card">
+                <h3>Office Location</h3>
+                <p>123 Insurance Way<br>
+                Suite 100<br>
+                Financial District, NY 10004</p>
+            </div>
+            <div class="card">
+                <h3>Phone & Email</h3>
+                <p>Phone: (555) 123-4567<br>
+                Toll-Free: (800) 123-4567<br>
+                Email: info@vic-insurance.com</p>
+            </div>
+            <div class="card">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                Saturday: 10:00 AM - 4:00 PM<br>
+                Sunday: Closed</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Variable Insurance Company (VIC). All rights reserved.</p>
+        <p><a href="about.html">About Us</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "IndexDocument": "index.html",
+  "ErrorDocument": "error.html",
+  "RoutingRules": []
+}
